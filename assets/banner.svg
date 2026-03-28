@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f23;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a3e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d4aa" />
+      <stop offset="100%" style="stop-color:#7b61ff" />
+    </linearGradient>
+    <linearGradient id="check" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4aa" />
+      <stop offset="100%" style="stop-color:#00f5c4" />
+    </linearGradient>
+  </defs>
+  <rect width="900" height="300" fill="url(#bg)" rx="16"/>
+
+  <!-- Decorative grid -->
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="60" x2="900" y2="60"/>
+    <line x1="0" y1="120" x2="900" y2="120"/>
+    <line x1="0" y1="180" x2="900" y2="180"/>
+    <line x1="0" y1="240" x2="900" y2="240"/>
+    <line x1="150" y1="0" x2="150" y2="300"/>
+    <line x1="300" y1="0" x2="300" y2="300"/>
+    <line x1="450" y1="0" x2="450" y2="300"/>
+    <line x1="600" y1="0" x2="600" y2="300"/>
+    <line x1="750" y1="0" x2="750" y2="300"/>
+  </g>
+
+  <!-- Shield icon -->
+  <g transform="translate(80, 85)">
+    <path d="M65 0 L130 30 L130 75 C130 115 100 140 65 155 C30 140 0 115 0 75 L0 30 Z"
+          fill="none" stroke="url(#check)" stroke-width="4" opacity="0.9"/>
+    <path d="M45 75 L60 90 L90 55" fill="none" stroke="url(#check)" stroke-width="6"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Title -->
+  <text x="260" y="125" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+        font-size="44" font-weight="700" fill="#ffffff" letter-spacing="-1">
+    UCP Compliance Checker
+  </text>
+
+  <!-- Subtitle -->
+  <text x="260" y="165" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+        font-size="18" fill="#8888aa" letter-spacing="0.5">
+    Audit any Universal Commerce Protocol merchant endpoint
+  </text>
+
+  <!-- Accent bar -->
+  <rect x="260" y="185" width="120" height="3" rx="1.5" fill="url(#accent)"/>
+
+  <!-- Tags -->
+  <g transform="translate(260, 210)">
+    <rect x="0" y="0" width="52" height="26" rx="13" fill="#00d4aa" fill-opacity="0.12"/>
+    <text x="26" y="17" font-family="monospace" font-size="12" fill="#00d4aa" text-anchor="middle">CLI</text>
+
+    <rect x="62" y="0" width="58" height="26" rx="13" fill="#7b61ff" fill-opacity="0.12"/>
+    <text x="91" y="17" font-family="monospace" font-size="12" fill="#7b61ff" text-anchor="middle">MCP</text>
+
+    <rect x="130" y="0" width="100" height="26" rx="13" fill="#ff6b6b" fill-opacity="0.12"/>
+    <text x="180" y="17" font-family="monospace" font-size="12" fill="#ff6b6b" text-anchor="middle">TypeScript</text>
+  </g>
+</svg>
